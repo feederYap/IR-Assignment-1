@@ -156,8 +156,8 @@ class PFLocaliser(PFLocaliserBase):
             pose = Pose()
             if random() < max(0.0, 1.0 - self.omegaFast/self.omegaSlow):
                 # Random sample is added here
-                pose.position.x = r.gauss(np.random.triangular(0, 0, 30), 0.1)
-                pose.position.y = r.gauss(np.random.triangular(0, 0, 30), 0.1)
+                pose.position.x = r.gauss(np.random.triangular(0, 15, 30), 0.1)
+                pose.position.y = r.gauss(np.random.triangular(0, 15, 30), 0.1)
                 pose.orientation.z = random()
                 pose.orientation.w = random()
                 indexsOfRandomParticles.append(i)
